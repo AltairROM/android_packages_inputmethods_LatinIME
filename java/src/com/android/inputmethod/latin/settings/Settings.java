@@ -358,7 +358,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     }
 
     public static boolean readShowNumberRow(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, false);
+        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, true);
     }
 
     public static float readKeyboardHeight(final SharedPreferences prefs,
