@@ -144,4 +144,7 @@
     <!-- Personalization configuration -->
     <!-- -1 means periocical wipe of the personalization dict is disabled. -->
     <integer name="config_personalization_dict_wipe_interval_in_days">-1</integer>
+
+    <!-- Always show number row configuration -->
+    <bool name="config_show_number_row">false</bool>
 </resources>
