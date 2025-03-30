@@ -143,7 +143,7 @@ public class SettingsValues {
         mShowsVoiceInputKey = needsToShowVoiceInputKey(prefs, res)
                 && mInputAttributes.mShouldShowVoiceInputKey
                 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
-        mShowNumberRow = prefs.getBoolean(Settings.PREF_SHOW_NUMBER_ROW, false);
+        mShowNumberRow = Settings.readShowNumberRow(prefs, res);
         mShowLongpressHints = prefs.getBoolean(Settings.PREF_SHOW_LONGPRESS_HINTS, true);
         mIncludesOtherImesInLanguageSwitchList = Settings.ENABLE_SHOW_LANGUAGE_SWITCH_KEY_SETTINGS
                 ? prefs.getBoolean(Settings.PREF_INCLUDE_OTHER_IMES_IN_LANGUAGE_SWITCH_LIST, false)
