@@ -97,7 +97,7 @@ public final class PreferencesSettingsFragment extends SubScreenFragment {
         }
         if (key.equals(Settings.PREF_SHOW_NUMBER_ROW)) {
             setPreferenceEnabled(Settings.PREF_SHOW_NUMBER_ROW_PASSWORD,
-                    !Settings.readShowNumberRow(prefs));
+                    !Settings.readShowNumberRow(prefs, res));
         }
         refreshEnablingsOfKeypressSoundAndVibrationSettings();
     }
