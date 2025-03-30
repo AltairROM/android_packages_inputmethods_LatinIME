@@ -361,8 +361,10 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         return (milliseconds != UNDEFINED_PREFERENCE_VALUE_INT) ? milliseconds : defaultValue;
     }
 
-    public static boolean readShowNumberRow(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, false);
+    public static boolean readShowNumberRow(final SharedPreferences prefs,
+            final Resources res) {
+        return prefs.getBoolean(PREF_SHOW_NUMBER_ROW,
+                res.getBoolean(R.bool.config_show_number_row));
     }
 
     public static float readKeyboardHeight(final SharedPreferences prefs,
